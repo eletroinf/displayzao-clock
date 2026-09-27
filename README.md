@@ -358,3 +358,19 @@ the 368 bytes quoted in the device datasheet.)
 * The `DS1302.C` driver ships with the CCS PIC C Compiler and is not
   redistributed here.
 * The datasheets in `docs/` are Toshiba documents, included for reference only.
+
+---
+
+## 12. License
+
+The firmware, the schematic and this documentation are released under the
+**MIT License** — see [`LICENSE`](LICENSE).
+
+Two things in this repository are **not** mine to license, and the MIT grant
+above does not extend to them:
+
+* **`docs/`** — the display datasheets are Toshiba documents, reproduced here
+  purely so the hardware can be understood. All rights remain Toshiba's.
+* **`DS1302.C`** — the RTC driver used by the firmware ships with the CCS PIC C
+  Compiler and is deliberately *not* included in this repository. You need a
+  CCS installation to rebuild `src/displayzao.c`.
