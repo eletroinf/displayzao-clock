@@ -1,0 +1,39 @@
+[PROJECT]
+Target=displayzao.HEX
+Development_Mode=
+Processor=0x877A
+ToolSuite=CCS
+
+[Directories]
+Include=C:\Arquivos de programas\PICC\devices\;C:\Arquivos de p
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=displayzao.c;
+BuildTool=C-COMPILER
+OptionString=+FM
+AdditionalOptionString=
+BuildRequired=1
+
+[displayzao.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=displayzao.c
+
+[Windows]
+0=0000 displayzao.c 0 0 796 451 3 0
+
+[Opened Files]
+1=D:\em_andamento\relogio_displayzao\displayzao.c
+2=C:\Arquivos de programas\PICC\devices\16F877A.h
+3=C:\Arquivos de programas\PICC\drivers\DS1302.C
+4=
+5=G:\em_andamento\displayzao\displayzao.lst
+6=

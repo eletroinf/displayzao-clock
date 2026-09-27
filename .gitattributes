@@ -1,0 +1,25 @@
+# Let Git detect text files and normalise line endings in the repository.
+* text=auto
+
+# 2007 sources. Comments are in Portuguese and the files are stored as UTF-8;
+# the original CCS build used CP1252.
+*.c    text
+*.h    text
+*.PJT  text
+*.LST  text
+*.sta  text
+*.tre  text
+*.err  text
+*.SYM  text
+
+# Intel HEX is text, but keep it byte-exact: it is the 2007 binary of record.
+*.HEX  -text
+
+# Binary artefacts — Git must never touch these.
+*.sch  binary
+*.cof  binary
+*.pdf  binary
+*.PDF  binary
+*.jpg  binary
+*.JPG  binary
+*.db   binary

@@ -1,0 +1,13 @@
+# Windows Explorer leftovers
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# macOS
+.DS_Store
+
+# CCS / MPLAB editor backups
+*.BAK
+*.bak
+*.esym
+*.ccspjt

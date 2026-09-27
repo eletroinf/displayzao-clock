@@ -1,0 +1,48 @@
+
+ROM used: 1221 (15%)
+          1221 (15%) including unused fragments
+
+          1 Average locations per line
+          3 Average locations per statement
+
+RAM used: 54 (31%) at main() level
+          70 (40%) worst case
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  613   326  88  G:\em_andamento\displayzao\displayzao.c
+   31     0   0  G:\em_andamento\displayzao\displayzao.h
+  304     0   0  C:\Arquivos de programas\PICC\devices\16F877A.h
+  119    44   6  C:\Arquivos de programas\PICC\drivers\DS1302.C
+----- -----
+ 2134   740 Total
+
+Page ROM  %  RAM  Functions:
+---- --- --- ---  ----------
+0     20   2   1  @delay_ms1
+0     40   3   2  write_ds1302_byte
+0     19   2   2  write_ds1302
+0     60   5   3  read_ds1302
+0     44   4   2  rtc_init
+0     22   2   0  @const99
+0     84   7   0  RTCC_isr
+0     11   1   0  @goto10120
+0    180  15   4  main
+0     60   5   1  atualiza_horario
+0     61   5   1  verifica_alarme
+0     61   5   1  atualiza_temperatura
+0     80   7   6  ler_temperatura
+0     23   2   5  @MUL1616
+0     40   3   5  @DIV1616
+0    344  28   7  acerta_relogio
+0     21   2   3  @DIV88
+
+ Segment   Used  Free
+---------  ----  ----
+00000-00003     4  0
+00004-00032    47  0
+00033-007FF  1170  827
+00800-00FFF     0  2048
+01000-017FF     0  2048
+01800-01FFF     0  2048
+

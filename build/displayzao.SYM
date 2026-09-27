@@ -1,0 +1,159 @@
+005     porta
+006     portb
+007     portc
+007.4   bt_entra
+007.5   bt_cancel
+008     portd
+008     PSP_DATA
+008.2   bt_inc
+008.3   bt_dec
+009     porte
+015-016 CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B-01C CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+01F     adcon0
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028     @TRIS_C
+029     d0
+02A     d1
+02B     d2
+02C     d3
+02D     d4
+02E     d5
+02F     d6
+030     hora
+031     minuto
+032     segundo
+033-035 m_temp
+036     alarme_hr
+037     alarme_min
+038.0   flg_tmr0
+038     flags
+038.1   dp_graus
+038.2   apaga_d2
+038.3   piscar_d2
+038.4   flg_alarme
+038.5   flg_alarmar
+039     RTCC_isr.digito
+03A     RTCC_isr.aux
+03B     RTCC_isr.t_bip
+03C-04B ler_temperatura.sensor
+04C     ler_temperatura.pt_sensor
+04D     main.seg
+04E     main.min
+04F     main.hora
+050     conta
+051     verifica_alarme.temp
+051     atualiza_temperatura.valor
+051     rtc_init.x
+051     acerta_relogio.oque
+051     main.@SCRATCH
+052-053 ler_temperatura.soma_sensor
+052     byte_bcd.n
+052     acerta_relogio.dig_a
+052     rtc_init.@SCRATCH
+052     atualiza_horario.@SCRATCH
+053     acerta_relogio.dig_b
+053     byte_bcd.@SCRATCH
+054     ler_temperatura.temp
+054     acerta_relogio.dig_c
+054     @DIV88.P1
+055-056 @DIV1616.P1
+055-056 @MUL1616.P2
+055     acerta_relogio.dig_d
+055     @DIV88.P1
+055     ler_temperatura.@SCRATCH
+056     acerta_relogio.ctrl
+056     ler_temperatura.@SCRATCH
+056     @DIV88.@SCRATCH
+057     rtc_set_datetime.day
+057-058 @DIV1616.P1
+057-058 @MUL1616.P2
+057     ler_temperatura.@SCRATCH
+057     acerta_relogio.@SCRATCH
+058     rtc_set_datetime.mth
+058     @delay_ms1.P1
+059     rtc_set_datetime.year
+059     @MUL1616.@SCRATCH
+059     @DIV1616.@SCRATCH
+05A     rtc_set_datetime.dow
+05A     read_ds1302.cmd
+05B     read_ds1302.i
+05B     rtc_set_datetime.hr
+05C     read_ds1302.data
+05C     rtc_set_datetime.min
+05D     write_ds1302.cmd
+05E     write_ds1302.data
+05F     write_ds1302_byte.cmd
+060     write_ds1302_byte.i
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+09F     adcon1
+0FF     @INTERRUPT_AREA
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+
+014B  @delay_ms1
+00A8  write_ds1302_byte
+00D0  write_ds1302
+00E3  read_ds1302
+011F  rtc_init
+034C  rtc_set_datetime
+023D  rtc_get_time
+0033  @const99
+0049  RTCC_isr
+009D  @goto10120
+0411  main
+01EE  atualiza_horario
+0382  verifica_alarme
+03D4  atualiza_temperatura
+019E  ler_temperatura
+015F  @MUL1616
+0176  @DIV1616
+022A  acerta_relogio
+03D9  byte_bcd
+03BF  @DIV88
+0411  @cinit
+
+Project Files:
+    G:\em_andamento\displayzao\displayzao.c
+    G:\em_andamento\displayzao\displayzao.h
+    C:\Arquivos de programas\PICC\devices\16F877A.h
+    C:\Arquivos de programas\PICC\drivers\DS1302.C
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   8
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      G:\em_andamento\displayzao\displayzao.err
+    INHX8:       G:\em_andamento\displayzao\displayzao.HEX
+    Symbols:     G:\em_andamento\displayzao\displayzao.SYM
+    List:        G:\em_andamento\displayzao\displayzao.LST
+    Debug/COFF:  G:\em_andamento\displayzao\displayzao.cof
+    Call Tree:   G:\em_andamento\displayzao\displayzao.tre
+    Statistics:  G:\em_andamento\displayzao\displayzao.sta
